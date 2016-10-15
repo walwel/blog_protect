@@ -1,0 +1,15 @@
+music 一级：继承原始布局：内容更改为  许嵩专辑50首和云音乐飙升榜93首（暂定），取出部分展示；右侧音乐搜索
+	二级：许嵩专辑50首的播放列表，及前十评语
+		云音乐飙升榜播放列表，及前十评语
+模板使用：
+一级：中继承base.html框架，在<div class="col-md-9 technology-left">引入<div class="music">
+<div class="music">中内容从数据库取出
+二级：纯播放列表，考虑动态加载
+
+继承 {%extends "base.html"%}
+{% block title %}{{block.super}} {% endblock %}
+{% for i in num %}
+swswsw
+{% endfor %}
+
+包含{% include "sub.html" %}
