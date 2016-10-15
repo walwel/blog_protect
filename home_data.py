@@ -1,7 +1,7 @@
 #coding=utf-8
 import urllib.request
 import re
-import get_data_home
+import save_data_db as db_save
 
 url_html = "http://wufazhuce.com/"
 url_header = {'User-Agent' : 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 Safari/537.36 SE 2.X MetaSr 1.0'}
@@ -43,7 +43,7 @@ re_all = r"""<a href=".*?"><img class="fp-one-imagen" src="(.*?)" alt="" /></a> 
                             <a href=".*?">(.*?)<"""
 match_all = re.findall(re_all, home_data)
 #连接写入数据库,保存图片
-conn, cur = get_data_home.connDB()
+conn, cur = db_save.connDB()
 #打开图片文件夹
 pic_dir = 'E:/html模板/pic_data/'
 pic_num = 1
@@ -56,12 +56,12 @@ for each_data in match_all:
       #print(type(each_data[2]),'\n',type(each_data[1]))
       pic_name = str(pic_num) + '.' +'jpg'
       #写入图片(url,pic_dir,pic_name)
-      get_data_home.save_pic(each_data[0], pic_dir, pic_name)
+      db_save.save_pic(each_data[0], pic_dir, pic_name)
       sql = "INSERT INTO blog_home VALUES (%d,'%s','%s','%s')" % (pic_num,each_data[2],each_data[1],pic_name)
       print(sql)
-      get_data_home.exeQuery(cur,conn,sql)
+      db_save.exeQuery(cur,conn,sql)
       pic_num += 1
-get_data_home.connClose(cur,conn)
+db_save.connClose(cur,conn)
 
             
 
