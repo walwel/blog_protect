@@ -27,16 +27,27 @@ print("连接数据库成功...")
 m_id = 1
 print("开始写入...")
 for music in match_musics:
-      #music_id,  music_name,  music_author, music_pic
+      #拼接url
+      #song_url = r'http://music.163.com/#/song?id=%s' % music[0]
+      #此处不再调用web函数，有bug
+      #song_data = web.get_web(song_url)
+      #browser.get(song_url)  
+      #browser.switch_to.frame(browser.find_element_by_xpath("//iframe"))
+      #匹配评论
+      #ele_com = browser.find_element_by_xpath("//div[@class='cnt f-brk']/img[not(@src)] and sup[not(@class)]]")
+      #music_id,  music_name,  music_author, music_pic， music_com
       music_id = str(music[0])
-      music_name = music[1].replace("'",".")
-      music_author = music[2].replace("'",".")
+      music_name = music[1].replace("'", ".")
+      music_author = music[2].replace("'", ".")
       music_pic = music[3]
+      #music_com = re.sub(r'<img src=".*?">', '', ele_com.text)
+      #print(music_com)
       #开始写入
       sql = "INSERT INTO blog_up_music VALUES (%d, '%s', '%s', '%s', '%s')" % (m_id, music_id, music_name, music_author, music_pic)
       db_save.exeQuery(cur,conn,sql)
       m_id += 1
 print("写入成功...")
+
 #关闭数据库
 db_save.connClose(cur,conn)
 

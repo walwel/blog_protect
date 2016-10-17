@@ -1,27 +1,14 @@
-[INFO  - 2016-10-17T11:12:38.855Z] GhostDriver - Main - running on port 64293
-[INFO  - 2016-10-17T11:12:41.349Z] Session [9ec7f1d0-945a-11e6-9903-21f5acb094f8] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
-[INFO  - 2016-10-17T11:12:41.349Z] Session [9ec7f1d0-945a-11e6-9903-21f5acb094f8] - page.customHeaders:  - {}
-[INFO  - 2016-10-17T11:12:41.350Z] Session [9ec7f1d0-945a-11e6-9903-21f5acb094f8] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
-[INFO  - 2016-10-17T11:12:41.350Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 9ec7f1d0-945a-11e6-9903-21f5acb094f8
-[ERROR - 2016-10-17T11:12:41.688Z] Session [9ec7f1d0-945a-11e6-9903-21f5acb094f8] - page.onError - msg: TypeError: null is not an object (evaluating 'document.body.clientWidth')
+[INFO  - 2016-10-17T13:39:35.472Z] GhostDriver - Main - running on port 54791
+[INFO  - 2016-10-17T13:39:38.479Z] Session [26330f60-946f-11e6-8c7e-4f30fe283b6f] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2016-10-17T13:39:38.479Z] Session [26330f60-946f-11e6-8c7e-4f30fe283b6f] - page.customHeaders:  - {}
+[INFO  - 2016-10-17T13:39:38.480Z] Session [26330f60-946f-11e6-8c7e-4f30fe283b6f] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2016-10-17T13:39:38.480Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 26330f60-946f-11e6-8c7e-4f30fe283b6f
+[ERROR - 2016-10-17T13:39:38.811Z] Session [26330f60-946f-11e6-8c7e-4f30fe283b6f] - page.onError - msg: TypeError: null is not an object (evaluating 'document.body.clientWidth')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-10-17T11:12:41.689Z] Session [9ec7f1d0-945a-11e6-9903-21f5acb094f8] - page.onError - stack:
+[ERROR - 2016-10-17T13:39:38.812Z] Session [26330f60-946f-11e6-8c7e-4f30fe283b6f] - page.onError - stack:
   fetch_visitor_hash (http://s2.music.126.net/static/mob/ntes.id.js:293)
   neteaseTracker (http://s2.music.126.net/static/mob/ntes.id.js:337)
   (anonymous function) (http://s2.music.126.net/static/mob/ntes.id.js:384)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-10-17T11:13:32.263Z] Session [9ec7f1d0-945a-11e6-9903-21f5acb094f8] - page.onError - msg: TypeError: undefined is not an object (evaluating 'Uw.addCallback')
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2016-10-17T11:13:32.264Z] Session [9ec7f1d0-945a-11e6-9903-21f5acb094f8] - page.onError - stack:
-  (anonymous function) (http://s3.music.126.net/sep/s/2/core.js?a50d37eca6115a7600ad969f50084a27:123)
-  forEach (:0)
-  cv (http://s3.music.126.net/sep/s/2/core.js?a50d37eca6115a7600ad969f50084a27:17)
-  (anonymous function) (http://s3.music.126.net/sep/s/2/core.js?a50d37eca6115a7600ad969f50084a27:123)
-  (anonymous function) (http://s3.music.126.net/sep/s/2/core.js?a50d37eca6115a7600ad969f50084a27:1)
-  KE (http://s3.music.126.net/sep/s/2/core.js?a50d37eca6115a7600ad969f50084a27:25)
-  (anonymous function) (http://s3.music.126.net/sep/s/2/core.js?a50d37eca6115a7600ad969f50084a27:1)
 
   phantomjs://platform/console++.js:263 in error
