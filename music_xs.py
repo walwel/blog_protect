@@ -31,7 +31,10 @@ match_img = re.findall(re_img,web_data)
 #检测数据是否匹配成功
 #print(match_index,'\nimg:'+str(match_img))
 #print(match_music_ids,"\n共匹配%d首" % len(match_music_ids))
-
+#打开图片文件夹
+pic_dir = 'E:/html模板/pic_data/'
+#写入图片(url,pic_dir,pic_name)
+db_save.save_pic(match_img[0], pic_dir, xs_img.jpg)
 print("开始连接数据库...")
 #连接写入数据库
 conn, cur = db_save.connDB()

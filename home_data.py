@@ -54,7 +54,7 @@ for each_data in match_all:
       #rhesis, author, picture_name
       #print(each_data[2],'\n',each_data[1])
       #print(type(each_data[2]),'\n',type(each_data[1]))
-      pic_name = str(pic_num) + '.' +'jpg'
+      pic_name = 'home_pic'+str(pic_num) + '.' +'jpg'
       #写入图片(url,pic_dir,pic_name)
       db_save.save_pic(each_data[0], pic_dir, pic_name)
       sql = "INSERT INTO blog_home VALUES (%d,'%s','%s','%s')" % (pic_num,each_data[2],each_data[1],pic_name)
