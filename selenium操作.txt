@@ -1,0 +1,36 @@
+from selenium import webdriver
+b = webdriver.Chrome()
+b.get("https://www.baidu.com")
+b.title //返回网页标题str
+b.current_url //返回网址str
+
+ele = b.find_element_by_id('kw')
+id(ele)
+
+ele.clear()
+
+ele.send_keys('xueyuaan')
+
+b.back() 返回
+
+ele = b.find_element_by_link_text("百度")
+
+ele = b.fing_element_by_css_selector('') //使用审查元素copy selector
+
+http://www.nationalgeographic.com.cn/photography/photo_of_the_day/
+
+模拟鼠标事件
+from selenium.webdriver.common.action_chains import ActionChains
+ele = dl.find_element_by_class_name("***")
+ActionChains(dl).move_to_element(ele).perform() //放在某个元素上
+eleget = dl.find_element_by_link_text("链接的文字")
+eleget.click() //发送左键
+导入键盘按键
+from selenium.webdriver.common.keys import Keys
+eleid = dl.find_element_by_id('q')
+eleid.send_keys("***")
+ele.send_keys(Keys.CONTROL, 'a') //发送ctr+a 全选
+
+b.window_handles /查看当前打开几个窗口
+b.current_window_handle //查看当前窗口
+b.switch_to_window(b.window_handles[1])// 用于切换窗口
